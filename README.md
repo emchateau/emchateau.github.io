@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+# emchateau.github.io
 
-You can use the [editor on GitHub](https://github.com/emchateau/emchateau.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Page personnelle d’Emmanuel Château-Dutier
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Cloner le projet
 
-### Markdown
+Ce projet contient des sous-modules git
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Cloner le répertoire
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+git clone --recursive https://github.com/publicarchi/ledoux-architecture.git
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Mettre à jour le répertoire et ses sous-modules
 
-### Jekyll Themes
+```bash
+git pull --recurse-submodules
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/emchateau/emchateau.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Déployer
 
-### Support or Contact
+Le site se déploie en utilisant une XSLT version 3.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- Exécuter `xsl/main.xsl` avec Saxon sur une branche gh-pages.
+- Pousser sur la branche distante
